@@ -19,14 +19,17 @@ int main(int argc, const char *argv[])
     filename = argv[1];
 
     ifstream ifs(filename);
+
+    // Controllo apertura file
     if (!ifs.is_open()) {
         cerr << "ERR: File non found." << endl;
         return 1;
     }
 
     string location;
-    
+    // Formato righe: "<città>" <temp00> <temp06> <temp12> <temp18>
     while (ifs >> location) {
+
         // Controllo errori di lettura generici
         if (ifs.fail() && !ifs.eof()) {
             cerr << "ERR: Errore generico nella lettura del file." << endl;
@@ -45,9 +48,12 @@ int main(int argc, const char *argv[])
         }
 
         media /= N;
+
+        // OUTPUT media
         cout << location << " " << media << endl;
     }
 
     ifs.close();
+
     return 0;
 }

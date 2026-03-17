@@ -12,6 +12,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wshadow")
 
 # Creazione eseguibili
-
+add_executable(printargs printargs.cpp)
 add_executable(media media.cpp)
 

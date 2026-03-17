@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+# don't sync build folders
+*build*
+*debug*

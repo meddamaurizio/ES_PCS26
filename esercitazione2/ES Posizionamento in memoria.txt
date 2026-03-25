@@ -1,0 +1,12 @@
+# Svolgimento posizionamento in memoria degli oggetti
+
+La stampa di 0 o di 1 dall'istruzione a riga 14 è dovuta al 
+possibile posizionamento contiguo delle variabili x e y in memoria.
+
+L'istruzione a riga dodici sovrascrive la parte di memoria presente 
+in &y + sizeof(double) (4 byte), che non è una operazione che porta 
+a un risultato prevedibile, come osservato dal fatto che i due eseguibili 
+forniti da due diversi compilatori forniscono risultati diversi. 
+
+Con il file [printaddr.cpp] ho stampato le posizioni 
+iniziali degli array per poi realizzare la grafica allegata.

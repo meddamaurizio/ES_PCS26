@@ -10,8 +10,9 @@ int x = 1;
 float y = 1.1;
 (&y)[1] = 0;
 std::cout << x << "\n";
-return 0;
 
 std::cout << " &x: " << &x  << std::endl;
 std::cout << " &y: " << &y  << std::endl;
+
+return 0;
 }

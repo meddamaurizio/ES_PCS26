@@ -12,6 +12,6 @@ float y = 1.1;
 std::cout << x << "\n";
 return 0;
 
-cout << " &x: " << &x  << endl;
-cout << " &y: " << &y  << endl;
+std::cout << " &x: " << &x  << std::endl;
+std::cout << " &y: " << &y  << std::endl;
 }

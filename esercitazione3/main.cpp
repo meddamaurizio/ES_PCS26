@@ -1,12 +1,12 @@
 #include "rational.hpp"
 
 int main() {
-    rational<int> nan_val(0,0);         // 0 args -> NaN
+    rational<int> nan_val(0,0);
     rational<int> whole(5);        // 1 arg  -> 5/1
     rational<int> frac1(1, 2);     // 2 args -> 1/2
-    rational<int> frac2(-3, -4);   // properly semplificas to 3/4
+    rational<int> frac2(-3, -4);   // semplifica a 3/4
     rational<int> inf_pos(1, 0);   // +inf
-    rational<int> inf_neg(-5, 0);  // semplificas to -1/0 (-inf)
+    rational<int> inf_neg(-5, 0);  // semplifica a -1/0 (-inf)
 
     std::cout << "--- VALORI ---\n";
     std::cout << "nan_val: " << nan_val << "\n";

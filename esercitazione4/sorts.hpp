@@ -1,7 +1,9 @@
 
 template<typename T>
 void BubbleSort(std::vector<T>& v) {
+
     int N = v.size();
+    if (N < 2) return;
     for (int imax = 0; imax < N - 1; imax++) {
         for (int i = 0; i < N - 1 - imax; i++) {
             if (v[i] > v[i+1]) {

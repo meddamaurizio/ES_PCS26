@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Nome del progetto
-project(esercitazione1) 
+project(esercitazione3) 
 
 # Impostare lo standard C++20
 set(CMAKE_CXX_STANDARD 20)

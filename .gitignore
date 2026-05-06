@@ -43,3 +43,4 @@
 # don't sync build folders
 *build*
 *debug*
+*release*
